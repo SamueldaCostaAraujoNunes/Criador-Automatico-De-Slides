@@ -68,11 +68,11 @@ class Inputs:
             dados = {
                 "temaCentral": self.TEMA_CENTRAL,
                 "autor": self.NOME_AUTOR,
-                "instituicao": self.NOME_INSTITUICAO,
+                "instituição": self.NOME_INSTITUICAO,
                 "dataApresentacao": self.DATA_APRESENTACAO
             }
             with open('Documents\\dadosInput.json', 'w') as outfile:
-                json.dump(dados, outfile, indent=2)
+                json.dump(dados, outfile, indent=2, ensure_ascii=False)
             return True
 
         except Exception:
