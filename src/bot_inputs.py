@@ -1,10 +1,13 @@
 # import datetime
+import json
+
 
 class Inputs:
 
     """
     Está classe é responsável por receber e tratar os inputs iniciais do user.
     """
+
     def __init__(self) -> None:
         """
         Esta função é responsável por construir a classe.
@@ -57,9 +60,24 @@ class Inputs:
         date = f"{dia} de {meses[mes]} de {ano}"
         return date
 
+    def save(self) -> None:
+        """
+        Esta função salva os atributos em um JSON.
+        """
+        dados = {
+            "temaCentral": self.TEMA_CENTRAL,
+            "autor": self.NOME_AUTOR,
+            "instituicao": self.NOME_INSTITUICAO,
+            "dataApresentacao": self.DATA_APRESENTACAO
+        }
+
+        with open('Documents\dadosInput.json', 'w') as outfile:
+            json.dump(dados, outfile)
+
 
 if __name__ == '__main__':
     inputs = Inputs()
+    inputs.save()
     print(f"O tema da apresentação é: {inputs.TEMA_CENTRAL}")
     print(f"O apresentador é: {inputs.NOME_AUTOR}")
     print(f"O nome da instituição é: {inputs.NOME_INSTITUICAO}")
