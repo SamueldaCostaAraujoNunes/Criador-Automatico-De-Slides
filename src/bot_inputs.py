@@ -60,19 +60,23 @@ class Inputs:
         date = f"{dia} de {meses[mes]} de {ano}"
         return date
 
-    def save(self) -> None:
+    def save(self) -> bool:
         """
         Esta função salva os atributos em um JSON.
         """
-        dados = {
-            "temaCentral": self.TEMA_CENTRAL,
-            "autor": self.NOME_AUTOR,
-            "instituicao": self.NOME_INSTITUICAO,
-            "dataApresentacao": self.DATA_APRESENTACAO
-        }
+        try:
+            dados = {
+                "temaCentral": self.TEMA_CENTRAL,
+                "autor": self.NOME_AUTOR,
+                "instituicao": self.NOME_INSTITUICAO,
+                "dataApresentacao": self.DATA_APRESENTACAO
+            }
+            with open('Documents\\dadosInput.json', 'w') as outfile:
+                json.dump(dados, outfile, indent=2)
+            return True
 
-        with open('Documents\dadosInput.json', 'w') as outfile:
-            json.dump(dados, outfile)
+        except Exception:
+            return False
 
 
 if __name__ == '__main__':

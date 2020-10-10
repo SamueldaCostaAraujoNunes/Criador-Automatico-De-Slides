@@ -1,4 +1,3 @@
 from bot_inputs import Inputs
 
-dados_da_apresentacao = Inputs()
-dados_da_apresentacao.save()
+Inputs().save()
