@@ -37,6 +37,7 @@ class Texto:
                            Version/9.0.2 Safari/601.3.9'}
 
         url = self.gerar_url()
+        artigos_obj = {}
         try:
             response = requests.get(url, headers=headers)
             soup = BeautifulSoup(response.content, 'html.parser')
@@ -44,7 +45,6 @@ class Texto:
                 .find('div', {"id": "gs_res_ccl_mid"}) \
                 .find_all('div', {"class": "gs_r gs_or gs_scl"})
 
-            artigos_obj = {}
             for item in artigos:
                 titulo = item.h3.a.get_text()
                 link = item.a['href']
@@ -53,7 +53,6 @@ class Texto:
         except AttributeError as e:
             print(f"Erro {e}")
 
-        
         self.save(artigos_obj)
 
     def gerar_url(self) -> str:
