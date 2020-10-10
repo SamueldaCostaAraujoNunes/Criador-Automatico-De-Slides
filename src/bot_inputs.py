@@ -57,6 +57,7 @@ class Inputs:
         date = f"{dia} de {meses[mes]} de {ano}"
         return date
 
+
 if __name__ == '__main__':
     inputs = Inputs()
     print(f"O tema da apresentação é: {inputs.TEMA_CENTRAL}")
