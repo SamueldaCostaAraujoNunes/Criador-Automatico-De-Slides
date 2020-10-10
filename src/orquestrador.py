@@ -1,3 +1,3 @@
-from bot_inputs import Input
+from bot_inputs import Inputs
 
-dados_da_apresentacao = Input()
+dados_da_apresentacao = Inputs()
