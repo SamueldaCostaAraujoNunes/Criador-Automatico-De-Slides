@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
+from selenium import webdriver
 import requests
+import time
 import json
 
 
@@ -36,33 +38,33 @@ class Texto:
                            AppleWebKit/601.3.9 (KHTML, like Gecko) \
                            Version/9.0.2 Safari/601.3.9'}
 
-        url = self.gerar_url()
+        url = self.gerar_url(0)
         artigos_obj = {}
         try:
             response = requests.get(url, headers=headers)
             soup = BeautifulSoup(response.content, 'html.parser')
-            artigos = soup \
-                .find('div', {"id": "gs_res_ccl_mid"}) \
-                .find_all('div', {"class": "gs_r gs_or gs_scl"})
+            artigos = soup.find('div', id="gs_res_ccl_mid")
+            artigos = artigos.find_all('div', {"class": "gs_r gs_or gs_scl"})
 
-            for item in artigos:
-                titulo = item.h3.a.get_text()
-                link = item.a['href']
+            for artigo in artigos:
+                titulo = artigo.h3.a.get_text()
+                link = artigo.a['href']
                 artigos_obj[titulo] = link
 
         except AttributeError as e:
             print(f"Erro {e}")
+        if artigos_obj:
+            self.save(artigos_obj)
 
-        self.save(artigos_obj)
-
-    def gerar_url(self) -> str:
+    def gerar_url(self, index: int) -> str:
         """
         Pesquisa o tema central no JSON de inputs
         e cria um URL de pesquisa no Google Académico.
         """
         query = self.dados["temaCentral"]
         query = query.strip().lower().replace(' ', '+')
-        url = f"https://scholar.google.com.br/scholar?hl=pt-BR&as_sdt=0%2C5&q={query}&btnG="
+        url = f"https://scholar.google.com.br/scholar?start={index}&q={query}&hl=pt-BR&as_sdt=0,5"
+        print(url)
         return url
 
     def save(self, artigos: dict) -> bool:
