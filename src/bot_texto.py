@@ -17,6 +17,7 @@ class Texto:
         """
         # Buscar dados de input
         self.dados_input = self.importa_dados()
+        self.watson = Watson()
         self.conteudo = self.pesquisa_no_wikipedia()
         self.conteudo_limpo = self.limpa_conteudo()
         self.sentences = self.quebra_em_sentences()
@@ -31,10 +32,13 @@ class Texto:
             return json_data
 
     def pesquisa_no_wikipedia(self) -> str:
+        nome_artigo = self.consulta_o_algoritmia()
         termos = {
-            "articleName": self.consulta_o_algoritmia(),
+            "articleName": nome_artigo,
             "lang": "pt"
         }
+        # url = f"https://en.wikipedia.org/wiki/{nome_artigo.replace(' ', '_')}"
+        # self.keywords = self.watson.analyze_url(url)["keywords"]
         client = Algorithmia.client(API_KEY_ALGORITHMIA)
         algo = client.algo('web/WikipediaParser/0.1.2')
         algo.set_options(timeout=300)
@@ -66,12 +70,19 @@ class Texto:
 
     def save(self):
         lista_de_sentenças = []
-        for sentence in self.sentences:
-            modelo_sentença = {"text": sentence, "keywords": [], "images": []}
+        for i in range(self.dados_input["tamanhoSlide"]):
+            sentence = self.sentences[i]
+            analise = self.watson.analyze_str(sentence)
+            keywords = [keyword["text"] for keyword in analise["keywords"]]
+            modelo_sentença = {"text": sentence,
+                               "keywords": keywords,
+                               "images": []}
             lista_de_sentenças.append(modelo_sentença)
+
+        geral = {"sentences": lista_de_sentenças}
         with open('Documents\\dadosSentences.json', 'w',
                   encoding='utf-8') as outfile:
-            json.dump(lista_de_sentenças, outfile, indent=2,
+            json.dump(geral, outfile, indent=2,
                       ensure_ascii=False)
 
 

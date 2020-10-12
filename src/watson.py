@@ -23,7 +23,7 @@ class Watson:
                'natural-language-understanding/api'
         self.service.set_service_url(link)
 
-    def analyze(self, sentence: str) -> dict:
+    def analyze_str(self, sentence: str) -> dict:
         """
         É passado um texto para o Watson analizar e ele devolve um dicionário,
         contendo as entidades e palavras chaves do texto.
@@ -35,8 +35,21 @@ class Watson:
         ).get_result()
         return response
 
+    def analyze_url(self, url_p: str) -> dict:
+        """
+        É passado um texto para o Watson analizar e ele devolve um dicionário,
+        contendo as entidades e palavras chaves do texto.
+        """
+        response = self.service.analyze(
+            url=url_p,
+            features=Features(entities=EntitiesOptions(),
+                              keywords=KeywordsOptions())
+        ).get_result()
+        return response
+
 
 if __name__ == '__main__':
     watson = Watson()
-    resposta = watson.analyze("O ESP8266 é um microcontrolador do fabricante chinês Espressif que inclui capacidade de comunicação por Wi-Fi.")
+    resposta = watson.analyze_str("O ESP8266 é um microcontrolador do fabricante chinês Espressif que inclui capacidade de comunicação por Wi-Fi.")
     print(json.dumps(resposta, indent=2))
+    print(keywords)

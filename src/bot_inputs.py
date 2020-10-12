@@ -23,10 +23,14 @@ class Inputs:
             data = input(
                 "Insira a data da apresentação seguindo o padrão DD-MM-AA: ")
             self.DATA_APRESENTACAO = self.trata_data(data)
+            q_slides = input(
+                "Insira a quantidade de slides desejado: "
+            )
+            self.Q_SLIDES = self.trata_inteiro(q_slides)
             self.save()
 
         except ValueError:
-            print("String inválida")
+            print("Dado incompativel")
 
         except AttributeError:
             print("Insira os dados no padrão solicitado")
@@ -61,6 +65,10 @@ class Inputs:
         date = f"{dia} de {meses[mes]} de {ano}"
         return date
 
+    def trata_inteiro(self, inteiro: str) -> int:
+        numero = int(inteiro)
+        return numero
+
     def save(self) -> bool:
         """
         Esta função salva os atributos em um JSON.
@@ -70,7 +78,8 @@ class Inputs:
                 "temaCentral": self.TEMA_CENTRAL,
                 "autor": self.NOME_AUTOR,
                 "instituição": self.NOME_INSTITUICAO,
-                "dataApresentacao": self.DATA_APRESENTACAO
+                "dataApresentacao": self.DATA_APRESENTACAO,
+                "tamanhoSlide": self.Q_SLIDES
             }
             with open('Documents\\dadosInput.json', 'w') as outfile:
                 json.dump(dados, outfile, indent=2, ensure_ascii=False)
@@ -86,3 +95,4 @@ if __name__ == '__main__':
     print(f"O apresentador é: {inputs.NOME_AUTOR}")
     print(f"O nome da instituição é: {inputs.NOME_INSTITUICAO}")
     print(f"O dia da apresentação é: {inputs.DATA_APRESENTACAO}")
+    print(f"O tamanho do slide é: {inputs.Q_SLIDES}")

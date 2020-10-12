@@ -1,52 +1,128 @@
-[
-  {
-    "text": "O ESP8266 é um microcontrolador do fabricante chinês Espressif que inclui capacidade de comunicação por Wi-Fi. ",
-    "keywords": [],
-    "images": []
-  },
-  {
-    "text": "O chip chegou a cultura maker em agosto de 2014, com a ESP-01. ",
-    "keywords": [],
-    "images": []
-  },
-  {
-    "text": "Esta pequena placa permite que microcontroladores se conectem a uma rede sem fio fazendo conexões TCP/IP usando um conjunto de comandos Hayes. ",
-    "keywords": [],
-    "images": []
-  },
-  {
-    "text": "O produto foi lançado inicialmente com quase nenhuma documentação no idioma Inglês . ",
-    "keywords": [],
-    "images": []
-  },
-  {
-    "text": "Seu sucesso se atribui ao seu preço que foi lançado inicialmente a um valor inferior a 10 dólares, valor semelhante a um microcontrolador sem interface de internet. ",
-    "keywords": [],
-    "images": []
-  },
-  {
-    "text": "No final de outubro de 2014, Espressif lançou um kit de desenvolvimento de software (SDK) que permitiu que o chip fosse programado diretamente, eliminando a necessidade de um microcontrolador Desde então, foram lançados diversos SDK no site do Espressif. ",
-    "keywords": [],
-    "images": []
-  },
-  {
-    "text": "O fabricante mantém duas versões do SDK, uma baseado em RTOS e outro em callback. ",
-    "keywords": [],
-    "images": []
-  },
-  {
-    "text": "Foi criado uma iniciativa em código aberto de SDK, armazenado no github a partir de um conjunto de ferramentas GCC mantidas por Max Filippov. ",
-    "keywords": [],
-    "images": []
-  },
-  {
-    "text": "O ESP8266 usa o microcontrolador Cadence Tensilica LX106. ",
-    "keywords": [],
-    "images": []
-  },
-  {
-    "text": "CPU 32-bit RISC: Tensilica Xtensa LX106 rodando a 80 MHz 64 KB de memória RAM de instruções, 96 KB de dados Flash QSPI Externo - de 512 KB a 4 MB IEEE 802.11 b / g / n Wi-Fi 16 pinos de GPIO SPI, I²C,",
-    "keywords": [],
-    "images": []
-  }
-]
+{
+  "sentences": [
+    {
+      "text": "SVG é a abreviatura de Scalable Vector Graphics que pode ser traduzido do inglês como gráficos vetoriais escalonáveis. ",
+      "keywords": [
+        "gráficos vetoriais",
+        "abreviatura de Scalable Vector Graphics",
+        "SVG",
+        "inglês"
+      ],
+      "images": []
+    },
+    {
+      "text": "Trata-se de uma linguagem XML para descrever de forma vetorial desenhos e gráficos bidimensionais, quer de forma estática, quer dinâmica ou animada. ",
+      "keywords": [
+        "linguagem XML",
+        "forma vetorial",
+        "gráficos bidimensionais",
+        "forma estática",
+        "desenhos",
+        "dinâmica"
+      ],
+      "images": []
+    },
+    {
+      "text": "Umas das principais características dos gráficos vetoriais, é que não perdem qualidade ao serem ampliados. ",
+      "keywords": [
+        "principais características dos gráficos vetoriais",
+        "qualidade"
+      ],
+      "images": []
+    },
+    {
+      "text": "A grande diferença entre o SVG e outros formatos vetoriais, é o fato de ser um formato aberto, não sendo propriedade de nenhuma empresa. ",
+      "keywords": [
+        "grande diferença",
+        "formatos vetoriais",
+        "formato aberto",
+        "propriedade de nenhuma empresa",
+        "SVG",
+        "fato"
+      ],
+      "images": []
+    },
+    {
+      "text": "Foi criado pela World Wide Web Consortium, responsável pela definição de outros padrões, como o HTML e o XHTML. ",
+      "keywords": [
+        "definição de outros padrões",
+        "World Wide Web Consortium",
+        "HTML",
+        "XHTML"
+      ],
+      "images": []
+    },
+    {
+      "text": "A criação deste formato foi baseada noutros já existentes: CSS, DOM, JPEG, PNG, SMIL e XML. ",
+      "keywords": [
+        "criação",
+        "formato",
+        "CSS",
+        "DOM",
+        "JPEG",
+        "PNG",
+        "SMIL",
+        "XML"
+      ],
+      "images": []
+    },
+    {
+      "text": "É um padrão aberto desenvolvido desde 1999 por um grupo de trabalho do W3C com base nos formatos PGML, da Adobe, e VML, da Microsoft, submetidos ao W3C por essas empresas em 1998.SVG é suportado por todos os navegadores Web modernos de forma nativa ou através de bibliotecas JavaScript. ",
+      "keywords": [
+        "padrão aberto",
+        "base nos",
+        "formatos PGML",
+        "W3C",
+        "grupo de trabalho do W3C",
+        "bibliotecas JavaScript",
+        "navegadores Web modernos de forma nativa",
+        "Adobe",
+        "VML",
+        "Microsoft",
+        "empresas",
+        "1998.SVG"
+      ],
+      "images": []
+    },
+    {
+      "text": "O suporte nativo no Microsoft Internet Explorer só é possível a partir da  versão 9. ",
+      "keywords": [
+        "suporte nativo",
+        "no Microsoft Internet Explorer",
+        "versão"
+      ],
+      "images": []
+    },
+    {
+      "text": "Bibliotecas JavaScript permitem suporte limitado em navegadores mais antigos. ",
+      "keywords": [
+        "Bibliotecas JavaScript",
+        "suporte",
+        "navegadores"
+      ],
+      "images": []
+    },
+    {
+      "text": "O formato SVG, neste momento, permite três tipos de objetos gráficos: formas geométricas vetoriais (isto é, linhas e curvas descritas matematicamente, ao contrário das imagens bitmap compostas por pixels) imagens raster / bitmap textoQuanto ao armazenamento, as imagens no formato SVG podem ser gravadas com a compressão gzip, sem perda de dados, podendo-se chamar neste caso, ficheiros SVGZ (assim como a extensão). ",
+      "keywords": [
+        "imagens bitmap",
+        "formato SVG",
+        "imagens raster",
+        "formas geométricas vetoriais",
+        "tipos de objetos gráficos",
+        "bitmap textoQuanto",
+        "imagens no",
+        "compressão gzip",
+        "perda de dados",
+        "ficheiros SVGZ",
+        "armazenamento",
+        "pixels",
+        "momento",
+        "linhas",
+        "caso",
+        "extensão"
+      ],
+      "images": []
+    }
+  ]
+}
