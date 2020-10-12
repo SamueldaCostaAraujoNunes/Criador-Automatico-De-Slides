@@ -1,0 +1,36 @@
+{
+  "usage": {
+    "text_units": 1,
+    "text_characters": 110,
+    "features": 2
+  },
+  "language": "pt",
+  "keywords": [
+    {
+      "text": "microcontrolador do fabricante chinês",
+      "relevance": 0.984422,
+      "count": 1
+    },
+    {
+      "text": "capacidade de comunicação",
+      "relevance": 0.575453,
+      "count": 1
+    },
+    {
+      "text": "ESP8266",
+      "relevance": 0.330174,
+      "count": 1
+    },
+    {
+      "text": "Espressif",
+      "relevance": 0.14957,
+      "count": 1
+    },
+    {
+      "text": "Wi",
+      "relevance": 0.118682,
+      "count": 1
+    }
+  ],
+  "entities": []
+}

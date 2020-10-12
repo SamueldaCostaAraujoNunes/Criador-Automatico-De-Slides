@@ -2,11 +2,12 @@ import json
 import Algorithmia
 import pysbd
 from secrets import API_KEY_ALGORITHMIA
+from watson import Watson
 
 
 class Texto:
     """
-    A classe Texto é responsável por criar, tratar, 
+    A classe Texto é responsável por criar, tratar,
     interpretar e separar os textos a respeito do tema central.
     """
 
@@ -32,7 +33,7 @@ class Texto:
     def pesquisa_no_wikipedia(self) -> str:
         termos = {
             "articleName": self.consulta_o_algoritmia(),
-            "lang": "en"
+            "lang": "pt"
         }
         client = Algorithmia.client(API_KEY_ALGORITHMIA)
         algo = client.algo('web/WikipediaParser/0.1.2')
@@ -43,7 +44,7 @@ class Texto:
     def consulta_o_algoritmia(self):
         m_input = {
             "search": self.dados_input["temaCentral"],
-            "lang": "en"
+            "lang": "pt"
         }
         client = Algorithmia.client(API_KEY_ALGORITHMIA)
         algo = client.algo('web/WikipediaParser/0.1.2')
@@ -51,8 +52,10 @@ class Texto:
         return algo.pipe(m_input).result[0]
 
     def limpa_conteudo(self) -> str:
-        without_blank_lines = [line.strip() for line in self.conteudo.split("\n")
-                               if line.strip() != "" and (not line.startswith("="))]
+        without_blank_lines = [line.strip()
+                               for line in self.conteudo.split("\n")
+                               if line.strip() != "" and
+                               (not line.startswith("="))]
         texto_limpo = ' '.join(without_blank_lines)
         return texto_limpo
 
@@ -62,12 +65,14 @@ class Texto:
         return quebrado
 
     def save(self):
-        lista_de_sentencas = []
+        lista_de_sentenças = []
         for sentence in self.sentences:
-            modelo_sentenca = {"text": sentence, "keywords": [], "images": []}
-            lista_de_sentencas.append(modelo_sentenca)
-        with open('Documents\\dadosSentences.json', 'w') as outfile:
-            json.dump(lista_de_sentencas, outfile, indent=2)
+            modelo_sentença = {"text": sentence, "keywords": [], "images": []}
+            lista_de_sentenças.append(modelo_sentença)
+        with open('Documents\\dadosSentences.json', 'w',
+                  encoding='utf-8') as outfile:
+            json.dump(lista_de_sentenças, outfile, indent=2,
+                      ensure_ascii=False)
 
 
 if __name__ == '__main__':
