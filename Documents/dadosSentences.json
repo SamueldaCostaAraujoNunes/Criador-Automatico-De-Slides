@@ -1,757 +1,787 @@
 [
   {
-    "text": "The RGB color model is an additive color model in which red, green, and blue light are added together in various ways to reproduce a broad array of colors. ",
+    "text": "Counter-Strike: Global Offensive (CS:GO) is a multiplayer first-person shooter video game developed by Valve and Hidden Path Entertainment. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The name of the model comes from the initials of the three additive primary colors, red, green, and blue. ",
+    "text": "It is the fourth game in the Counter-Strike series and was released for Windows, OS X, Xbox 360, and PlayStation 3 in August 2012, while the Linux version was released in 2014. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The main purpose of the RGB color model is for the sensing, representation, and display of images in electronic systems, such as televisions and computers, though it has also been used in conventional photography. ",
+    "text": "The game pits two teams against each other: the Terrorists and the Counter-Terrorists. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Before the electronic age, the RGB color model already had a solid theory behind it, based in human perception of colors. ",
+    "text": "Both sides are tasked with eliminating the other while also completing separate objectives. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "RGB is a device-dependent color model: different devices detect or reproduce a given RGB value differently, since the color elements (such as phosphors or dyes) and their response to the individual R, G, and B levels vary from manufacturer to manufacturer, or even in the same device over time. ",
+    "text": "The Terrorists, depending on the game mode, must either plant the bomb or defend the hostages, while the Counter-Terrorists must either prevent the bomb from being planted, defuse the bomb, or rescue the hostages. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Thus an RGB value does not define the same color across devices without some kind of color management. ",
+    "text": "There are nine game modes, all of which have distinct characteristics specific to that mode. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Typical RGB input devices are color TV and video cameras, image scanners, and digital cameras. ",
+    "text": "The game also has matchmaking support that allows players to play on dedicated Valve servers, as well as allowing members of the community to host their own servers with custom maps and game modes. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Typical RGB output devices are TV sets of various technologies (CRT, LCD, plasma, OLED, quantum dots, etc.), computer and mobile phone displays, video projectors, multicolor LED displays and large screens such as Jumbotron. ",
+    "text": "A battle-royale game-mode, \"Danger Zone\", was introduced in 2018. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Color printers, on the other hand are not RGB devices, but subtractive color devices (typically CMYK color model). ",
+    "text": "Global Offensive received positive reviews from critics on release, who praised for its gameplay and faithfulness to predecessors, though it was criticized for some of its early features and was noted for differences between the console and PC versions. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "This article discusses concepts common to all the different color spaces that use the RGB color model, which are used in one implementation or another in color image-producing technology. ",
+    "text": "Since its release, it has drawn in an estimated 11 million players per month, and has gathered an active competitive scene, with many tournaments sponsored by Valve themselves. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "To form a color with RGB, three light beams (one red, one green, and one blue) must be superimposed (for example by emission from a black screen or by reflection from a white screen). ",
+    "text": "In December 2018, Valve transitioned the game to a free-to-play model, focusing on revenue from cosmetic items. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Each of the three beams is called a component of that color, and each of them can have an arbitrary intensity, from fully off to fully on, in the mixture. ",
+    "text": "Global Offensive, like prior games in the Counter-Strike series, is an objective-based, multiplayer first-person shooter. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The RGB color model is additive in the sense that the three light beams are added together, and their light spectra add, wavelength for wavelength, to make the final color's spectrum. ",
+    "text": "Two opposing teams, known as the Terrorists and the Counter-Terrorists, compete in game modes to complete objectives, such as securing a location to plant or defuse a bomb and rescuing or guarding hostages. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "This is essentially opposite to the subtractive color model, particularly the CMY color model, that applies to paints, inks, dyes, and other substances whose color depends on reflecting the light under which we see them. ",
+    "text": "At the end of each round, players are rewarded based on their individual performance with in-game currency to spend on other weapons or utility in subsequent rounds. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Because of properties, these three colors create white, this is in stark contrast to physical colors, such as dyes which create black when mixed. ",
+    "text": "Winning rounds rewards more money than losing does, and completing objectives such as killing enemies gives cash bonuses. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Zero intensity for each component gives the darkest color (no light, considered the black), and full intensity of each gives a white; the quality of this white depends on the nature of the primary light sources, but if they are properly balanced, the result is a neutral white matching the system's white point. ",
+    "text": "Uncooperative actions, such as killing teammates, result in a penalty. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "When the intensities for all the components are the same, the result is a shade of gray, darker or lighter depending on the intensity. ",
+    "text": "There are five categories of purchasable weapons, four being guns and the final being utilities: rifles, sub-machine guns (SMGs), heavy, pistols, and grenades. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "When the intensities are different, the result is a colorized hue, more or less saturated depending on the difference of the strongest and weakest of the intensities of the primary colors employed. ",
+    "text": "All guns have different properties and all grenade types have different in-game effects. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "When one of the components has the strongest intensity, the color is a hue near this primary color (red-ish, green-ish, or blue-ish), and when two components have the same strongest intensity, then the color is a hue of a secondary color (a shade of cyan, magenta or yellow). ",
+    "text": "The hand grenade (HE) deals damage in a small radius, the smoke grenade temporarily places a smoke screen, the decoy grenade emulates the player's primary gun, the flashbang temporarily blinds players who look towards it when it explodes, and the Molotov cocktail and Incendiary Grenade set a small part of the map on fire for a short period of time. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "A secondary color is formed by the sum of two primary colors of equal intensity: cyan is green+blue, magenta is blue+red, and yellow is red+green. ",
+    "text": "Alongside all of the main weapons, the Zeus x27, a taser, can also be purchased.Global Offensive has nine main game modes: Competitive, Casual, Deathmatch, Arms Race, Demolition, Wingman, Flying Scoutsman, Danger Zone, and Weapons Course. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Mixing secondary colors will result in the light versions of their common primary color: magenta+yellow is light red, yellow+cyan is light green, and cyan+magenta is light blue. ",
+    "text": "Competitive mode pits players against each other in two teams of five players in roughly 45-minute matches. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Every secondary color is the complement of one primary color: cyan complements red, magenta complements green, and yellow complements blue. ",
+    "text": "The Casual and Deathmatch modes are less serious than Competitive mode and do not register friendly fire or collision with other teammates. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "When a primary and its complementary secondary color are added together, the resulting color would be the very light version of the mixed primary color: red+cyan results into very light red, green+magenta results into very light green, and blue+yellow results into very light blue. ",
+    "text": "Both are primarily used as a practice tool. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "When all the primary colors are mixed in equal intensities, the result is white. ",
+    "text": "Arms Race is similar to the \"Gun Game\" mod for other games in the series. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The RGB color model itself does not define what is meant by red, green, and blue colorimetrically, and so the results of mixing them are not specified as absolute, but relative to the primary colors. ",
+    "text": "It consists of players racing to upgrade their guns via killing enemies. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "When the exact chromaticities of the red, green, and blue primaries are defined, the color model then becomes an absolute color space, such as sRGB or Adobe RGB; see RGB color spaces for more details. ",
+    "text": "Demolition is also like the \"Gun Game\" mod, though players are also able to plant and defuse the bomb. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The choice of primary colors is related to the physiology of the human eye; good primaries are stimuli that maximize the difference between the responses of the cone cells of the human retina to light of different wavelengths, and that thereby make a large color triangle.The normal three kinds of light-sensitive photoreceptor cells in the human eye (cone cells) respond most to yellow (long wavelength or L), green (medium or M), and violet (short or S) light (peak wavelengths near 570 nm, 540 nm and 440 nm, respectively). ",
+    "text": "Players only receive gun upgrades at the start of new rounds if they killed an enemy the previous round. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The difference in the signals received from the three kinds allows the brain to differentiate a wide gamut of different colors, while being most sensitive (overall) to yellowish-green light and to differences between hues in the green-to-orange region. ",
+    "text": "Wingman is a two-on-two bomb defusal game-mode taking place over fifteen rounds. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "As an example, suppose that light in the orange range of wavelengths (approximately 577 nm to 597 nm) enters the eye and strikes the retina. ",
+    "text": "It is similar to Competitive in the sense that players are paired based on their skill levels. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Light of these wavelengths would activate both the medium and long wavelength cones of the retina, but not equally\u2014the long-wavelength cells will respond more. ",
+    "text": "Flying Scoutsman is a mode in which players are equipped only with a SSG 08 and a knife while they play in low-gravity. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The difference in the response can be detected by the brain, and this difference is the basis of our perception of orange. ",
+    "text": "The Flying Scoutsman, Demolition, and Arms Race game modes are placed in the War Games tab. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Thus, the orange appearance of an object results from light from the object entering our eye and stimulating the different cones simultaneously but to different degrees. ",
+    "text": "Danger Zone is a battle-royale mode in which players play against up to 16 or 18 others. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Use of the three primary colors is not sufficient to reproduce all colors; only colors within the color triangle defined by the chromaticities of the primaries can be reproduced by additive mixing of non-negative amounts of those colors of light. ",
+    "text": "Everyone starts with a knife and a tablet and have to search for weapons, ammunition, equipment, and money. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The RGB color model is based on the Young\u2013Helmholtz theory of trichromatic color vision, developed by Thomas Young and Hermann von Helmholtz in the early to mid-nineteenth century, and on James Clerk Maxwell's color triangle that elaborated that theory (circa 1860). ",
+    "text": "Through the tablet, players can purchase certain weapons, ammunition, and equipment with money found around the map inside buildings and in completing objectives such as returning hostages to the rescue zones. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The first experiments with RGB in early color photography were made in 1861 by Maxwell himself, and involved the process of combining three color-filtered separate takes. ",
+    "text": "When a player purchases an item, it is delivered to them from a drone that goes to their location and drops the item. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "To reproduce the color photograph, three matching projections over a screen in a dark room were necessary. ",
+    "text": "The tablet is also used for tracking other players. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The additive RGB model and variants such as orange\u2013green\u2013violet were also used in the Autochrome Lumi\u00e8re color plates and other screen-plate technologies such as the Joly color screen and the Paget process in the early twentieth century. ",
+    "text": "The last person or team alive wins, like other battle-royale games. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Color photography by taking three separate plates was used by other pioneers, such as the Russian Sergey Prokudin-Gorsky in the period 1909 through 1915. ",
+    "text": "The Weapons Course is an offline practice mode designed to help new players learn how to use guns and grenades, as well as defusing and planting the bomb. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Such methods lasted until about 1960 using the expensive and extremely complex tri-color carbro Autotype process.When employed, the reproduction of prints from three-plate photos was done by dyes or pigments using the complementary CMY model, by simply using the negative plates of the filtered takes: reverse red gives the cyan plate, and so on. ",
+    "text": "Apart from the Weapons Course, all seven other game modes can be played online or offline with bots.Matchmaking is supported for all online game modes and is managed through the Steam software. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Before the development of practical electronic TV, there were patents on mechanically scanned color systems as early as 1889 in Russia. ",
+    "text": "These matches run Valve Anti-Cheat to prevent cheating. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The color TV pioneer John Logie Baird demonstrated the world's first RGB color transmission in 1928, and also the world's first color broadcast in 1938, in London. ",
+    "text": "In Competitive mode, players are encouraged to act more cautiously in Global Offensive than in most other multiplayer games due to the inability to respawn once killed. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "In his experiments, scanning and display were done mechanically by spinning colorized wheels.The Columbia Broadcasting System (CBS) began an experimental RGB field-sequential color system in 1940. ",
+    "text": "When playing Competitive, each player has a specific rank based on their skill level and is paired up with other players around the same ranking. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Images were scanned electrically, but the system still used a moving part: the transparent RGB color wheel rotating at above 1,200 rpm in synchronism with the vertical scan.  ",
+    "text": "One form of matchmaking in Global Offensive to prevent cheating, Prime Matchmaking, hosts matches that can only be played with other users with the \"Prime\" feature. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The camera and the cathode-ray tube (CRT) were both monochromatic. ",
+    "text": "This feature also results in more equal matches as there are fewer \"smurfs\" in these matches. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Color was provided by color wheels in the camera and the receiver. ",
+    "text": "The PC version of Global Offensive also supports private dedicated servers that players may connect to through the community server menu in-game. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "More recently, color wheels have been used in field-sequential projection TV receivers based on the Texas Instruments monochrome DLP imager. ",
+    "text": "These servers may be heavily modified and can drastically differ from the base game modes. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The modern RGB shadow mask technology for color CRT displays was patented by Werner Flechsig in Germany in 1938. ",
+    "text": "There have been many community made mods for the game, one of the popular ones being \"kz\", a mod that makes players complete obstacle courses requiring advanced strafing and jumping techniques.Over time, the community developed strategies for competitive play. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Early personal computers of the late 1970s and early 1980s, such as those from Apple, and Commodore's Commodore VIC-20, used composite video whereas the Commodore 64 and the Atari family used S-Video derivatives. ",
+    "text": "When trying to capture a site, a common strategy used is called \"rushing\". ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "IBM introduced a 16-color scheme (four bits\u2014one bit each for red, green, blue, and intensity) with the Color Graphics Adapter (CGA) for its first IBM PC (1981), later improved with the Enhanced Graphics Adapter (EGA) in 1984. ",
+    "text": "Rushing is when a player or group of players move into a choke-point on the map as fast as possible. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The first manufacturer of a truecolor graphics card for PCs (the TARGA) was Truevision in 1987, but it was not until the arrival of the Video Graphics Array (VGA) in 1987 that RGB became popular, mainly due to the analog signals in the connection between the adapter and the monitor which allowed a very wide range of RGB colors. ",
+    "text": "This strategy is used commonly when one of the teams is running an \"eco\". ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Actually, it had to wait a few more years because the original VGA cards were palette-driven just like EGA, although with more freedom than VGA, but because the VGA connectors were analog, later variants of VGA (made by various manufacturers under the informal name Super VGA) eventually added true-color. ",
+    "text": "An eco is used usually when a team has a lack of money to buy weapons, utility, or armor, forcing the team to be left with less effective weapons and little utility. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "In 1992, magazines heavily advertised true-color Super VGA hardware. ",
+    "text": "\"Eco rounds\" are rounds in which a team will buy few or no guns in order to save up money for future rounds. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "One common application of the RGB color model is the display of colors on a cathode ray tube (CRT), liquid-crystal display (LCD), plasma display, or organic light emitting diode (OLED) display such as a television, a computer's monitor, or a large scale screen. ",
+    "text": "Occasionally, when it is known a team is low on money, the opposition will purchase \"anti-eco\" weapons which perform well at close range. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Each pixel on the screen is built by driving three small and very close but still separated RGB light sources. ",
+    "text": "This is to prevent casualties and financial bonuses for the opponents. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "At common viewing distance, the separate sources are indistinguishable, which tricks the eye to see a given solid color. ",
+    "text": "Rushing is also used if there is a lack of time on the clock and the bomb needs to be planted or defused in an act of desperation. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "All the pixels together arranged in the rectangular screen surface conforms the color image. ",
+    "text": "Another common strategy for taking a site is using predetermined smoke grenades and flashbangs to hinder enemies' sight.Global Offensive saw the introduction of new weapons and equipment not seen in previous installments, most notably the firebomb for each team (referred to as a Molotov on the Terrorist side and as an Incendiary Grenade on the Counter-Terrorist side). ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "During digital image processing each pixel can be represented in the computer memory or interface hardware (for example, a graphics card) as binary values for the red, green, and blue color components. ",
+    "text": "These temporarily cover a small area in fire, dealing damage to anyone passing through. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "When properly managed, these values are converted into intensities or voltages via gamma correction to correct the inherent nonlinearity of some devices, such that the intended intensities are reproduced on the display. ",
+    "text": "Global Offensive also saw the introduction of a range of new weapons, including shotguns, pistols, sub-machine guns, and a taser. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The Quattron released by Sharp uses RGB color and adds yellow as a sub-pixel, supposedly allowing an increase in the number of available colors. ",
+    "text": "Two new game modes, Arms Race and Demolition, both based on mods for previous iterations in the series, were added alongside a total of eight new maps for said game modes. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "RGB is also the term referring to a type of component video signal used in the video electronics industry.  ",
+    "text": "Global Offensive saw the removal of features seen in previous iterations of the series. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "It consists of three signals\u2014red, green, and blue\u2014carried on three separate cables/pins. ",
+    "text": "The ability to freely explore the map when dead was removed from many modes, though server hosts are able to change this setting. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "RGB signal formats are often based on modified versions of the RS-170 and RS-343 standards for monochrome video. ",
+    "text": "Upon the game's release, the USP and the MP5 were replaced by other guns; however, silenced versions of both guns have since been added. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "This type of video signal is widely used in Europe since it is the best quality signal that can be carried on the standard SCART connector. ",
+    "text": "The tactical shield was removed, but was re-added to the game on May 7, 2019 'Danger Zone' update as the 'Ballistic Shield'.  ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "This signal is known as RGBS (4 BNC/RCA terminated cables exist as well), but it is directly compatible with RGBHV used for computer monitors (usually carried on 15-pin cables terminated with 15-pin D-sub or 5 BNC connectors), which carries separate horizontal and vertical sync signals. ",
+    "text": "The concept of sprays were not present in the game until the addition of consumable items called graffiti. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Outside Europe, RGB is not very popular as a video signal format; S-Video takes that spot in most non-European regions. ",
+    "text": "Counter-Strike: Global Offensive is the sequel to the popular first-person shooter Counter-Strike: Source, developed by Valve. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "However, almost all computer monitors around the world use RGB. ",
+    "text": "Global Offensive's development began when Hidden Path Entertainment attempted to port Counter-Strike: Source onto video game consoles prior to the end of its lifespan. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "A framebuffer is a digital device for computers which stores data in the so-called video memory (comprising an array of Video RAM or similar chips). ",
+    "text": "During its development, Valve saw the opportunity to turn the port into a full game and expand on the predecessor's gameplay. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "This data goes either to three digital-to-analog converters (DACs) (for analog monitors), one per primary color or directly to digital monitors. ",
+    "text": "Global Offensive began development in March 2010, and was revealed to the public on August 12, 2011. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Driven by software, the CPU (or other specialized chips) write the appropriate bytes into the video memory to define the image. ",
+    "text": "The closed beta started on November 30, 2011, and was initially restricted to around ten thousand people who received a key at events intended to showcase Global Offensive. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Modern systems encode pixel color values by devoting eight bits to each of the R, G, and B components. ",
+    "text": "After issues with client and server stability were addressed, the beta was opened up to progressively more people, and at E3 2012, Valve announced that Global Offensive would be released on August 21, 2012, with the open beta starting roughly a month before that. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "RGB information can be either carried directly by the pixel bits themselves or provided by a separate color look-up table (CLUT) if indexed color graphic modes are used. ",
+    "text": "Before the public beta, Valve invited professional Counter-Strike players to play-test the game and give feedback.There were plans for cross-platform multiplayer between Windows, OS X, Linux, Xbox 360, and PlayStation 3 players, but was ultimately limited to include only the PC versions because of the difference in update frequency between the systems. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "A CLUT is a specialized RAM that stores R, G, and B values that define specific colors. ",
+    "text": "On August 21, 2012, the game was publicly released on all platforms except Linux, which would not be released until September 23.Since the initial release of Global Offensive, Valve has continued to update the game by introducing new maps and weapons, game-modes, and weapon balancing changes. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Each color has its own address (index)\u2014consider it as a descriptive reference number that provides that specific color when the image needs it. ",
+    "text": "One of the major additions to the game post-release was the \"Arms Deal\" update. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The content of the CLUT is much like a palette of colors. ",
+    "text": "Released on August 13, 2013, it added cosmetic weapon finishes, dubbed as skins, to the game. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Image data that uses indexed color specifies addresses within the CLUT to provide the required R, G, and B values for each specific pixel, one pixel at a time. ",
+    "text": "These items are obtainable by unboxing cases using in-game keys, of which are only accessible through in-game microtransactions. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Of course, before displaying, the CLUT has to be loaded with R, G, and B values that define the palette of colors required for each image to be rendered. ",
+    "text": "Skins can also be obtained in similar ways to the items in Team Fortress 2 and Dota 2 in the sense that they are dropped randomly. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Some video applications store such palettes in PAL files (Age of Empires game, for example, uses over half-a-dozen) and can combine CLUTs on screen. ",
+    "text": "During tournaments, viewers have a chance of being rewarded a case that they can open and receive certain skins from. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "RGB24 and RGB32This indirect scheme restricts the number of available colors in an image CLUT\u2014typically 256-cubed (8 bits in three color channels with values of 0\u2013255)\u2014although each color in the RGB24 CLUT table has only 8 bits representing 256 codes for each of the R, G, and B primaries, making 16,777,216 possible colors. ",
+    "text": "Global Offensive has Steam Workshop support, allowing users to upload user-created content, such as maps, weapon skins, and custom game-modes. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "However, the advantage is that an indexed-color image file can be significantly smaller than it would be with only 8 bits per pixel for each primary. ",
+    "text": "Some popular user-created skins are added to the game and are obtainable from unboxing them in cases. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Modern storage, however, is far less costly, greatly reducing the need to minimize image file size. ",
+    "text": "The creators of the skins are paid when their item is added to a case. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "By using an appropriate combination of red, green, and blue intensities, many colors can be displayed. ",
+    "text": "These skins helped form a virtual economy for Global Offensive, leading to the creation of gambling, betting, and trading sites.Events called \"Operations\" are held occasionally and can be accessed through purchasable expansion packs in the form of \"operation passes.\" ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Current typical display adapters use up to 24-bits of information for each pixel: 8-bit per component multiplied by three components (see the Digital representations section below (24bits = 2563, each primary value of 8 bits with values of 0\u2013255). ",
+    "text": "These passes grant access to operation objectives which are spread over different game modes, such as Arms Race and Deathmatch, or in operation-specific game modes, first seen in Operation Hydra, released in May 2017. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "With this system, 16,777,216 (2563 or 224) discrete combinations of R, G, and B values are allowed, providing millions of different (though not necessarily distinguishable) hue, saturation and lightness shades. ",
+    "text": "Completing these challenges rewards the player with XP and the ability to upgrade the operation \"coin.\" ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Increased shading has been implemented in various ways, some formats such as .png and .tga files among others using a fourth greyscale color channel as a masking layer, often called RGB32. ",
+    "text": "The maps in the operations are community made, meaning some of the revenue made goes towards the map designers.An update in October 2014 added \"music kits\", which replace the default in-game music with music from soundtrack artists commissioned by Valve. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "For images with a modest range of brightnesses from the darkest to the lightest, eight bits per primary color provides good-quality images, but extreme images require more bits per primary color as well as the advanced display technology. ",
+    "text": "If a player with a music kit equipped becomes the round's most valuable player, their music will play for others at the end of the round. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "For more information see High Dynamic Range (HDR) imaging. ",
+    "text": "There is a feature that allows kits to be borrowed, and kits can be sold and exchanged through the Community Market.In 2016, the game saw two remakes of original Counter-Strike maps, as well as the introduction of Prime matchmaking and additional items. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "In classic cathode ray tube (CRT) devices, the brightness of a given point over the fluorescent screen due to the impact of accelerated electrons is not proportional to the voltages applied to the electron gun control grids, but to an expansive function of that voltage. ",
+    "text": "As a part of the Operation Wildfire promotion, Nuke was remade and re-released in February with the primary goals being to balance the map and make it more aesthetically pleasing. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The amount of this deviation is known as its gamma value ( \u03b3 {\\displaystyle \\gamma } ), the argument for a power law function, which closely describes this behavior. ",
+    "text": "In April, Prime matchmaking was added to the game. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "A linear response is given by a gamma value of 1.0, but actual CRT nonlinearities have a gamma value around 2.0 to 2.5. ",
+    "text": "To partake in this mode, the user had to have a verified phone number connected to their account. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Similarly, the intensity of the output on TV and computer display devices is not directly proportional to the R, G, and B applied electric signals (or file data values which drive them through digital-to-analog converters). ",
+    "text": "It was introduced in an attempt to prevent legitimate players from playing with cheaters or high-skilled players playing on alternative, lower ranked accounts, a practice colloquially known as \"smurfing\". ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "On a typical standard 2.2-gamma CRT display, an input intensity RGB value of (0.5, 0.5, 0.5) only outputs about 22% of full brightness (1.0, 1.0, 1.0), instead of 50%. ",
+    "text": "Inferno, another original map, was re-released in October. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "To obtain the correct response, a gamma correction is used in encoding the image data, and possibly further corrections as part of the color calibration process of the device. ",
+    "text": "Valve said they had three reasons behind the remake: \"to improve visibility; to make it easier to move around in groups; and to tune it with player feedback.\" ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Gamma affects black-and-white TV as well as color. ",
+    "text": "Also in October, consumable items called graffiti were added to the game. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "In standard color TV, broadcast signals are gamma corrected. ",
+    "text": "These items replaced a feature present in the previous iterations of the series called sprays. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "In color television and video cameras manufactured before the 1990s, the incoming light was separated by prisms and filters into the three RGB primary colors feeding each color into a separate video camera tube (or pickup tube). ",
+    "text": "Previously, players could customize their sprays. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "These tubes are a type of cathode ray tube, not to be confused with that of CRT displays. ",
+    "text": "Graffiti ideas can be uploaded to the Steam Workshop in the similar manner as gun skins and players can buy and trade the existing graffiti in game. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "With the arrival of commercially viable charge-coupled device (CCD) technology in the 1980s, first, the pickup tubes were replaced with this kind of sensor. ",
+    "text": "One month later, glove skins were added.In September 2017, Valve Company worked with the publisher Perfect World to release Global Offensive in mainland China. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Later, higher scale integration electronics was applied (mainly by Sony), simplifying and even removing the intermediate optics, thereby reducing the size of home video cameras and eventually leading to the development of full camcorders. ",
+    "text": "Chinese citizens, with their identification verified, can receive the game for free and earn Prime matchmaking status immediately. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Current webcams and mobile phones with cameras are the most miniaturized commercial forms of such technology. ",
+    "text": "The game is played through Perfect World's launcher and contains numerous exclusive changes to the game, including the censorship of skulls and other symbols. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Photographic digital cameras that use a CMOS or CCD image sensor often operate with some variation of the RGB model. ",
+    "text": "Some other changes were in the cosmetics in certain maps, for example, the hammer and sickle on Cache and Train were removed. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "In a Bayer filter arrangement, green is given twice as many detectors as red and blue (ratio 1:2:1) in order to achieve higher luminance resolution than chrominance resolution. ",
+    "text": "In preparation for the release, multiple cities in China celebrated and heavily promoted its upcoming release. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The sensor has a grid of red, green, and blue detectors arranged so that the first row is RGRGRGRG, the next is GBGBGBGB, and that sequence is repeated in subsequent rows. ",
+    "text": "Users who played the game during its launch month received free promotional cosmetics. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "For every channel, missing pixels are obtained by interpolation in the demosaicing process to build up the complete image. ",
+    "text": "In compliance with Chinese law, Valve also had to disclose its loot box gambling odds.In November 2017, an update to the competitive matchmaking was announced. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Also, other processes used to be applied in order to map the camera RGB measurements into a standard RGB color space as sRGB. ",
+    "text": "Called the \"Trust Factor\", it meant a player's \"Trust Factor\" would be calculated through both in-game and Steam-wide actions. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "In computing, an image scanner is a device that optically scans images (printed text, handwriting, or an object) and converts it to a digital image which is transferred to a computer. ",
+    "text": "Factors such as playtime on Global Offensive, times a user has been reported for cheating, playtime on other Steam games, and other behaviors hidden by Valve are taken into consideration when a user's \"Trust Factor\" is developed. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Among other formats, flat, drum and film scanners exist, and most of them support RGB color. ",
+    "text": "This was done in an attempt to let the community bond back together in matchmaking, as Prime matchmaking separated Prime and non-Prime players from each other. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "They can be considered the successors of early telephotography input devices, which were able to send consecutive scan lines as analog amplitude modulation signals through standard telephonic lines to appropriate receivers; such systems were in use in press since the 1920s to the mid-1990s. ",
+    "text": "Valve will not let users view their \"Trust Factor\" or reveal all of the factors deciding one's \"Trust\". ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Color telephotographs were sent as three separated RGB filtered images consecutively. ",
+    "text": "In August 2018, an offline version of the game was released that allows the players to play offline with bots.An update released on December 6, 2018, made the game fully free to play from that point onward. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Currently available scanners typically use charge-coupled device (CCD) or contact image sensor (CIS) as the image sensor, whereas older drum scanners use a photomultiplier tube as the image sensor. ",
+    "text": "Users that had purchased the game prior to this point received a special \"Prime\" status that gives them access to improved matchmaking and modes that can drop cosmetic items while new users have the option to purchase this status. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Early color film scanners used a halogen lamp and a three-color filter wheel, so three exposures were needed to scan a single color image. ",
+    "text": "In addition, the new version introduced a battle royale mode called \"Danger Zone\".",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Due to heating problems, the worst of them being the potential destruction of the scanned film, this technology was later replaced by non-heating light sources such as color LEDs. ",
+    "text": "In November 2019, Operation Shattered Web was released. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "A color in the RGB color model is described by indicating how much of each of the red, green, and blue is included. ",
+    "text": "It operates similarly to the previous operations and introduces new character models and a battle pass system.In April 2020, source code for 2018 versions of Counter-Strike: Global Offensive and Team Fortress 2 were leaked on the Internet. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The color is expressed as an RGB triplet (r,g,b), each component of which can vary from zero to a defined maximum value. ",
+    "text": "This created fears that malicious users would take advantage of the code to develop potential remote code execution software and attack game servers or players' own computers. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "If all the components are at zero the result is black; if all are at maximum, the result is the brightest representable white. ",
+    "text": "Several ongoing fan projects temporarily halted development in wake of this news until better confirmation of the impact of the leak could be determined. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "These ranges may be quantified in several different ways: From 0 to 1, with any fractional value in between.  ",
+    "text": "Valve confirmed the legitimacy of the code leaks, but stated they do not believe it impacts servers and clients running the latest official builds of either game. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "This representation is used in theoretical analyses, and in systems that use floating point representations. ",
+    "text": "Since the game's release, Global Offensive influenced accessories have been released. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Each color component value can also be written as a percentage, from 0% to 100%. ",
+    "text": "An official store is available which sells collectible products, including a real-life version of the \"Five Year Veteran Coin\". ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "In computers, the component values are often stored as integer numbers in the range 0 to 255, the range that a single 8-bit byte can offer. ",
+    "text": "Companies such as SteelSeries have partnered with Valve to promote real life peripherals, including headsets, mice and mouse pads. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "These are often represented as either decimal or hexadecimal numbers. ",
+    "text": "Following the introduction of the Arms Deal update in August 2013, skins formed a virtual economy due to their rarity and other high-value factors that influenced their desirability. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "High-end digital image equipment are often able to deal with larger integer ranges for each primary color, such as 0..1023 (10 bits), 0..65535 (16 bits) or even larger, by extending the 24-bits (three 8-bit values) to 32-bit, 48-bit, or 64-bit units (more or less independent from the particular computer's word size).",
+    "text": "Due to this, the creation of a number of skin trading sites enabled by the Steamworks API were created. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "For example, brightest saturated red is written in the different RGB notations as: In many environments, the component values within the ranges are not managed as linear (that is, the numbers are nonlinearly related to the intensities that they represent), as in digital cameras and TV broadcasting and receiving due to gamma correction, for example. ",
+    "text": "Some of these sites began to offer gambling functionality, allowing users to bet on the outcome of professional matches with skins. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Linear and nonlinear transformations are often dealt with via digital image processing.  ",
+    "text": "In June and July 2016, two formal lawsuits were filed against these gambling sites and Valve, stating that these encourage underage gambling and undisclosed promotion by some streamers. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Representations with only 8 bits per component are considered sufficient if gamma encoding is used.Following is the mathematical relationship between RGB space to HSI space (hue, saturation, and intensity: HSI color space): I = R + G + B 3 S = 1 \u2212 3 ( R + G + B ) min ( R , G , B ) H = cos \u2212 1 \u2061 ( ( R \u2212 G ) + ( R \u2212 B ) 2 ( R \u2212 G ) 2 + ( R \u2212 B ) ( G \u2212 B ) ) assuming G > B {\\displaystyle {\\begin{aligned}I&={\\frac {R+G+B}{3}}\\\\S&=1\\,-\\,{\\frac {3}{(R+G+B)}}\\,\\min(R,G,B)\\\\H&=\\cos ^{-1}\\left({\\frac {(R-G)+(R-B)}{2{\\sqrt {(R-G)^{2}+(R-B)(G-B)}}}}\\right)\\qquad {\\text{assuming  }}G>B\\end{aligned}}} If B > G {\\displaystyle B>G} , then H = 360 \u2212 H {\\displaystyle H=360-H} . ",
+    "text": "Valve in turn began to take steps to prevent these sites from using Steamworks for gambling purposes, and several of these sites ceased operating as a result. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The RGB color model is one of the most common ways to encode color in computing, and several different binary digital representations are in use. ",
+    "text": "In July 2018, Valve disabled the opening of containers in Belgium and the Netherlands after their loot boxes appeared to violate Dutch and Belgium gambling laws. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The main characteristic of all of them is the quantization of the possible values per component (technically a sample ) by using only integer numbers within some range, usually from 0 to some power of two minus one (2n \u2212 1) to fit them into some bit groupings.  ",
+    "text": "The Global Offensive professional scene consists of tournaments hosted by third-party organisations and Valve-organised or co-sponsored tournaments, referred to as Majors. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Encodings of 1, 2, 4, 5, 8 and 16 bits per color are commonly found; the total number of bits used for an RGB color is typically called the color depth. ",
+    "text": "Majors have larger prize pools; originally set at $250,000, the prize pools for majors have risen, with MLG Columbus 2016 having the first pool of $1,000,000.In 2014, the \"first large match fixing scandal\" in the Global Offensive community took place, where team iBuyPower purposefully lost a match against NetCodeGuides.com. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "See also RGB color spaceSince colors are usually defined by three components, not only in the RGB model, but also in other color models such as CIELAB and Y'UV, among others, then a three-dimensional volume is described by treating the component values as ordinary Cartesian coordinates in a Euclidean space. ",
+    "text": "The team was later banned by Valve, though ESL unbanned the team from their tournaments in 2017. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "For the RGB model, this is represented by a cube using non-negative values within a 0\u20131 range, assigning black to the origin at the vertex (0, 0, 0), and with increasing intensity values running along the three axes up to white at the vertex (1, 1, 1), diagonally opposite black. ",
+    "text": "They are still unable to play in Majors.In October 2015, a number of professional eSports organization with Counter-Strike teams announced the formation of a trade union that set several demands for future tournament attendance. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "An RGB triplet (r,g,b) represents the three-dimensional coordinate of the point of the given color within the cube or its faces or along its edges. ",
+    "text": "The announcement was a publicly posted email written by Natus Vincere CEO Alexander Kokhanovsky that was sent to organizers of major esports events. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "This approach allows computations of the color similarity of two given RGB colors by simply calculating the distance between them: the shorter the distance, the higher the similarity. ",
+    "text": "Among these demands was notice that teams part of the union would not attend a tournament with a prize pool of less than $75,000 for Counter-Strike: Global Offensive and $100,000 for Dota 2. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Out-of-gamut computations can also be performed this way. ",
+    "text": "Among the teams that were announced were Natus Vincere, Team Liquid, Counter Logic Gaming, Cloud9, Virtus.pro, Team SoloMid, Fnatic, Ninjas in Pyjamas, Titan, and Team EnVyUs. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The RGB color model for HTML was formally adopted as an Internet standard in HTML 3.2, though it had been in use for some time before that. ",
+    "text": "In 2016, the World eSports Association (WESA) was founded by ESL and many eSports teams, including Fnatic, Natus Vincere, Team EnVyUs, and FaZe Clan, though the latter-most left soon after its formation. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Initially, the limited color depth of most video hardware led to a limited color palette of 216 RGB colors, defined by the Netscape Color Cube. ",
+    "text": "In the announcement statement, WESA said they would \"further professionalize eSports by introducing elements of player representation, standardized regulations, and revenue sharing for teams\". ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "With the predominance of 24-bit displays, the use of the full 16.7 million colors of the HTML RGB color code no longer poses problems for most viewers. ",
+    "text": "Alongside this, they also plan to help the fans and organizers by \"seeking to create predictable schedules\".",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The web-safe color palette consists of the 216 (63) combinations of red, green, and blue where each color can take one of six values (in hexadecimal): #00, #33, #66, #99, #CC or #FF (based on the 0 to 255 range for each value discussed above). ",
+    "text": "Esports organizations Cloud9 and Dignitas, among others, announced plans in February 2020 to launch Flashpoint, a franchise-based league for Counter-Strike, as to counter concerns over the state of the current promotion/regulation leagues, with the league to be owned by the teams rather than a single organization, as in the case of the Overwatch League. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "These hexadecimal values = 0, 51, 102, 153, 204, 255 in decimal, which = 0%, 20%, 40%, 60%, 80%, 100% in terms of intensity.  ",
+    "text": "As the game and the scene grew in popularity, companies, including WME/IMG and Turner Broadcasting, began to televise Global Offensive professional games, with the first being ELEAGUE Major 2017, held in the Fox Theatre and broadcast on US cable television network TBS in 2016. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "This seems fine for splitting up 216 colors into a cube of dimension 6.  ",
+    "text": "On August 22, 2018, Turner announced their further programming of Global Offensive with ELEAGUE\u2019s Esports 101: CSGO and ELEAGUE CS:GO Premier 2018's docu-series on the TBS network. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "However, lacking gamma correction, the perceived intensity on a standard 2.5 gamma CRT / LCD is only: 0%, 2%, 10%, 28%, 57%, 100%.  ",
+    "text": "Counter-Strike: Global Offensive received generally positive reception from critics, according to review aggregator Metacritic. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "See the actual web safe color palette for a visual confirmation that the majority of the colors produced are very dark.The syntax in CSS is: rgb(#,#,#) where # equals the proportion of red, green, and blue respectively. ",
+    "text": "Since the game's release, Global Offensive has been steadily at the top of the Steam charts in terms of most concurrent players. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "This syntax can be used after such selectors as \"background-color:\" or (for text) \"color:\". ",
+    "text": "The game won the fan's choice \"eSports Game of the Year\" award at The Game Awards 2015.Reviewers praised Global Offensive's faithfulness to the previous game, Counter-Strike: Source, with Allistair Pinsof of Destructoid rating the game very highly and saying that Global Offensive is a \"polished and better looking\" version of the game. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Proper reproduction of colors, especially in professional environments, requires color management of all the devices involved in the production process, many of them using RGB. ",
+    "text": "GameSpot writer Eric Neigher said in their review that this game stays true to its predecessors by adding much content, but tweaking small amounts and retaining their best features. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Color management results in several transparent conversions between device-independent and device-dependent color spaces (RGB and others, as CMYK for color printing) during a typical production cycle, in order to ensure color consistency throughout the process. ",
+    "text": "The reviewers at gamesTM wrote in their review that the game stood \"as a glowing reminder that quality game design is rewarded in longevity and variety.\" ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Along with the creative processing, such interventions on digital images can damage the color accuracy and image detail, especially where the gamut is reduced. ",
+    "text": "They also continued onto congratulate Valve that they had not only updated the popular game, but \"had completely outclassed its contemporaries.\" ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Professional digital devices and software tools allow for 48 bpp (bits per pixel) images to be manipulated (16 bits per channel), to minimize any such damage. ",
+    "text": "Martin Gaston of VideoGamer.com wrote that although he was too old to truly enjoy the game, he believed that it was a \"fine installment of one of the best games ever made,\" and that some people will experience \"what will become the definitive moments of their gaming lives.\" ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "ICC-compliant applications, such as Adobe Photoshop, use either the Lab color space or the CIE 1931 color space as a Profile Connection Space when translating between color spaces. ",
+    "text": "Xav de Matos for Engadget wrote that for the price, \"Global Offensive is a great extension to that legacy.\" ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "All luminance\u2013chrominance formats used in the different TV and video standards such as YIQ for NTSC, YUV for PAL, YDBDR for SECAM, and YPBPR for component video use color difference signals, by which RGB color images can be encoded for broadcasting/recording and later decoded into RGB again to display them. ",
+    "text": "Mitch Dyer from IGN said that \"Global Offensive is definitely a Counter-Strike sequel \u2013 it looks and feels familiar, with minor tweaks here and there to help balance old issues and surprise longtime players.\"Some of the features in the early releases of the game were criticized by reviewers. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "These intermediate formats were needed for compatibility with pre-existent black-and-white TV formats. ",
+    "text": "GameSpy's Mike Sharkey did not believe that the new content added was good or that there was much of it, and said that the Elo rating system seemed ineffective with many players of various skill levels all playing at once throughout the early days of release. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Also, those color difference signals need lower data bandwidth compared to full RGB signals. ",
+    "text": "Evan Lahti from PC Gamer noted that the majority of new official maps in Global Offensive were only for Arms Race or Demolition game modes, while Classic maps were only given \"smart adjustments\" to minor details. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "Similarly, current high-efficiency digital color image data compression schemes such as JPEG and MPEG store RGB color internally in YCBCR format, a digital luminance-chrominance format based on YPBPR. ",
+    "text": "Pinsof thought that in its release state, it would not be the final version of the game. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "The use of YCBCR also allows computers to perform lossy subsampling with the chroma channels (typically to 4:2:2 or 4:1:1 ratios), which reduces the resultant file size. ",
+    "text": "Paul Goodman said that for long-time fans of the series, Global Offensive will start to show the game's age, expressing that he \"couldn't help but feel that I had been there and done that a dozen times before.\"Although reviewers liked the console versions of the game, they believed there were obvious differences between the PC and console versions. ",
     "keywords": [],
-    "imagens": []
+    "images": []
   },
   {
-    "text": "RGB mixer RGB to HEX conversion Demonstrative color conversion applet",
+    "text": "Neigher believed that due playing with thumbsticks and shoulder buttons \"you definitely won't be getting the ultimate CS:GO experience.\" ",
     "keywords": [],
-    "imagens": []
+    "images": []
+  },
+  {
+    "text": "Ron Vorstermans for Gamer.nl said that the PC version is there to play at a higher competitive level, though he went on to say that the console versions are not inferior because of the PC's superiority for competition. ",
+    "keywords": [],
+    "images": []
+  },
+  {
+    "text": "Dyer wrote that the PlayStation 3 version was at an advantage to the Xbox version because of the ability to connect a keyboard and mouse to the system. ",
+    "keywords": [],
+    "images": []
+  },
+  {
+    "text": "He continued on to say that the user-interface on both of the consoles was as good as the PC one. ",
+    "keywords": [],
+    "images": []
+  },
+  {
+    "text": "Mark Langshaw of Digital Spy opined that although the game has support for the PlayStation Move, using it only makes the \"already unforgiving game all the more challenging.\"The game was nominated for \"Best Spectator Game\" in IGN's Best of 2017 Awards, for \"eSports Game of the Year\" at the 2017, 2018, and 2019 Golden Joystick Awards, for \"Best eSports Game\" at The Game Awards 2017 and The Game Awards 2019, and for \"Game, eSports\" at the 17th Annual National Academy of Video Game Trade Reviewers Awards. ",
+    "keywords": [],
+    "images": []
+  },
+  {
+    "text": "In 2018, the game was nominated for \"Fan Favorite eSports Game\" and \"Fan Favorite eSports League Format\" with the Majors at the Gamers' Choice Awards, and for \"eSports Title of the Year\" at the Australian Games Awards. ",
+    "keywords": [],
+    "images": []
+  },
+  {
+    "text": "Official website Global Offensive at ValveSoftware.com Quotations related to Counter-Strike: Global Offensive at Wikiquote",
+    "keywords": [],
+    "images": []
   }
 ]

@@ -3,6 +3,7 @@ import Algorithmia
 import pysbd
 from secrets import API_KEY_ALGORITHMIA
 
+
 class Texto:
     """
     A classe Texto é responsável por criar, tratar, 
