@@ -1,0 +1,56 @@
+{
+    "keywords": ["Funcionamento", "O sistema RGB e os ecrãs/as telas do computador", "Representação numérica"],
+    "artigos":{
+        "0": {
+            "title":"Filtro de imagem baseado em matriz RGB de cores-padrão para futebol de robôs",
+            "link":"https://fei.edu.br/~flaviot/pub_arquivos/Enri04.PDF",
+            "reference":"PENHARBEL, Eder A. et al. Filtro de imagem baseado em matriz RGB de cores-padrão para futebol de robôs. Submetido ao I Encontro de Robótica Inteligente, 2004."
+        },
+        "1": {
+            "title":"Cor luz, cor pigmento e os sistemas RGB e CMY",
+            "link":"http://www.belasartes.br/revistabelasartes/downloads/artigos/3/cor-luz-cor-pigmento-e-os-sistemas-rgb-e-cmy.pdf",
+            "reference":"ROCHA, João Carlos. Cor luz, cor pigmento e os sistemas RGB e CMY. Revista Belas Artes, São Paulo, n. 3, p. 1-19, 2010."
+        },
+        "2": {
+            "title":"Um modelo simples e parametrizável para classificação de cores no sistema RGB",
+            "link":"https://www.researchgate.net/profile/Thiago_Gouveia/publication/268808902_UM_MODELO_SIMPLES_E_PARAMETRIZAVEL_PARA_CLASSIFICACAO_DE_CORES_NO_SISTEMA_RGB/links/54772e550cf293e2da25e2b8/UM-MODELO-SIMPLES-E-PARAMETRIZAVEL-PARA-CLASSIFICACAO-DE-CORES-NO-SISTEMA-RGB.pdf",
+            "reference":"CORRÊA¹, João Henrique Gonçalves et al. Um modelo simples e parametrizável para classificação de cores no sistema RGB."
+        },
+        "3": {
+            "title":"Controle de cores de uma luminária utilizando led RGB",
+            "link":"https://repositorio.uniceub.br/jspui/bitstream/235/3864/1/Rogerio%20Leite%20Monografia%201_2013.pdf",
+            "reference":"LEITE, Rogério Esmeraldo. Controle de cores de uma luminária utilizando led RGB. 2013."
+        },
+        "4": {
+            "title":"Identificação de regiões pluviometricamente homogêneas no estado do Rio de Janeiro, utilizando-se valores mensais",
+            "link":"https://repositorio.unesp.br/bitstream/handle/11449/28936/S0102-77862008000400009.pdf?sequence=1",
+            "reference":"ANDRÉ, Romisio Geraldo Bouhid et al. Identificação de regiões pluviometricamente homogêneas no estado do Rio de Janeiro, utilizando-se valores mensais. Revista Brasileira de Meteorologia, p. 501-509, 2008."
+        },
+        "5": {
+            "title":"Cálculo de volume de objetos utilizando câmeras RGB-D",
+            "link":"http://www.bambui.ifmg.edu.br/jornada_cientifica/2014/resumos/Info/C%C3%A1lculo%20de%20volume%20de%20objetos%20utilizando%20c%C3%A2meras%20RGB-D.pdf",
+            "reference":"DE ASSIS, Servílio Souza; RAMOS, Izadora Aparecida; SOARES, Bruno Alberto. Cálculo de volume de objetos utilizando câmeras RGB-D."
+        },
+        "6": {
+            "title":"Criação de geometrias anatómicas recorrendo a imagens RGB",
+            "link":"https://www.researchgate.net/profile/Pedro_Talaia/publication/257360544_Criacao_de_geometrias_anatomicas_recorrendo_a_imagens_RGB/links/54b5058b0cf2318f0f970dec/Criacao-de-geometrias-anatomicas-recorrendo-a-imagens-RGB.pdf",
+            "reference":"TALAIA, Pedro et al. Criação de geometrias anatómicas recorrendo a imagens RGB. In: 4º Congresso Nacional de Biomecânica, February. 2011. p. 4-5."
+        },
+        "7": {
+            "title":"Controle de qualidade em queijo minas padrão: métodos físico-químicos, microbiológicos e moleculares.",
+            "link":"https://www.alice.cnptia.embrapa.br/bitstream/doc/1116679/1/Livroqueijominas2019.pdf",
+            "reference":"COSTA, Renata Golin Bueno et al. Controle de qualidade em queijo minas padrão: métodos físico-químicos, microbiológicos e moleculares. Embrapa Agroindústria Tropical-Livro científico (ALICE), 2019."
+        },
+        "8": {
+            "title":"Morfologia matemática na extração de bordas de uma imagem IKONOS-2 RGB fusionada",
+            "link":"https://pdfs.semanticscholar.org/aff2/bf3a65934cee21480f95f0f11496e6e89e7f.pdf",
+            "reference":"CANDEIAS, Ana Lúcia Bezerra et al. Morfologia matemática na extração de bordas de uma imagem IKONOS-2 RGB fusionada. Revista Brasileira de Geomática, v. 4, n. 1, 2016."
+        },
+        "9": {
+            "title":"Um estudo sobre o uso do modelo de cor RGB no processo de correspondência por correlação",
+            "link":"https://revistas.ufpr.br/bcg/article/viewFile/8247/5766",
+            "reference":"DA SILVA, Paulo Henrique Amorim et al. Um estudo sobre o uso do modelo de cor RGB no processo de correspondência por correlação. Boletim de Ciências Geodésicas, v. 13, n. 1, 2007."
+        }
+        
+    }
+}
