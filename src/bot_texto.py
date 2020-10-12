@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
-from selenium import webdriver
 import requests
-import time
 import json
 
 
@@ -33,26 +31,31 @@ class Texto:
         Pesquisa o tema central  no Google Académico, cria um dict
         contendo o nome do artigo e o link para o download.
         """
-        headers = {
+        headers: dict = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) \
                            AppleWebKit/601.3.9 (KHTML, like Gecko) \
                            Version/9.0.2 Safari/601.3.9'}
 
-        url = self.gerar_url(0)
-        artigos_obj = {}
-        try:
-            response = requests.get(url, headers=headers)
-            soup = BeautifulSoup(response.content, 'html.parser')
-            artigos = soup.find('div', id="gs_res_ccl_mid")
-            artigos = artigos.find_all('div', {"class": "gs_r gs_or gs_scl"})
+        artigos_obj: dict = {}
+        num_page: int = 0
+        while len(artigos_obj.values()) < 15:
+            url = self.gerar_url(num_page)
+            try:
+                response = requests.get(url, headers=headers)
+                soup = BeautifulSoup(response.content, 'html.parser')
+                artigos = soup.find('div', id="gs_res_ccl_mid")
+                artigos = artigos.find_all('div', {"class": "gs_r gs_or gs_scl"})
 
-            for artigo in artigos:
-                titulo = artigo.h3.a.get_text()
-                link = artigo.a['href']
-                artigos_obj[titulo] = link
+                for artigo in artigos:
+                    titulo = artigo.h3.a.get_text()
+                    link = artigo.a['href']
+                    artigos_obj[titulo] = link
 
-        except AttributeError as e:
-            print(f"Erro {e}")
+            except AttributeError:
+                pass
+
+            num_page += 1
+
         if artigos_obj:
             self.save(artigos_obj)
 
@@ -64,7 +67,6 @@ class Texto:
         query = self.dados["temaCentral"]
         query = query.strip().lower().replace(' ', '+')
         url = f"https://scholar.google.com.br/scholar?start={index}&q={query}&hl=pt-BR&as_sdt=0,5"
-        print(url)
         return url
 
     def save(self, artigos: dict) -> bool:
@@ -76,7 +78,8 @@ class Texto:
                 json.dump(artigos, outfile, indent=2, ensure_ascii=False)
             return True
 
-        except Exception:
+        except Exception as e:
+            print("Erro na função save: ", e)
             return False
 
 
