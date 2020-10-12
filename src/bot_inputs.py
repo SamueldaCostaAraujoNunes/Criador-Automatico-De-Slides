@@ -23,6 +23,7 @@ class Inputs:
             data = input(
                 "Insira a data da apresentação seguindo o padrão DD-MM-AA: ")
             self.DATA_APRESENTACAO = self.trata_data(data)
+            self.save()
 
         except ValueError:
             print("String inválida")
@@ -81,7 +82,6 @@ class Inputs:
 
 if __name__ == '__main__':
     inputs = Inputs()
-    inputs.save()
     print(f"O tema da apresentação é: {inputs.TEMA_CENTRAL}")
     print(f"O apresentador é: {inputs.NOME_AUTOR}")
     print(f"O nome da instituição é: {inputs.NOME_INSTITUICAO}")
