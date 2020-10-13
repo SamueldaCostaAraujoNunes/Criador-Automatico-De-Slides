@@ -3,6 +3,7 @@ import Algorithmia
 import pysbd
 from secrets import API_KEY_ALGORITHMIA
 from watson import Watson
+from tqdm import tqdm
 
 
 class Texto:
@@ -15,12 +16,20 @@ class Texto:
         """
         Inicializa a classe Texto
         """
+        pbar = tqdm(desc="Robô de Texto: ", unit="Process", total=6)
         self.dados = self.load()
+        pbar.update(1)
         self.watson = Watson()
+        pbar.update(1)
         self.conteudo = self.pesquisa_no_wikipedia()
+        pbar.update(1)
         self.conteudo_limpo = self.limpa_conteudo()
+        pbar.update(1)
         self.sentences = self.quebra_em_sentences()
+        pbar.update(1)
         self.save()
+        pbar.update(1)
+        pbar.close()
 
     def pesquisa_no_wikipedia(self) -> str:
         """
