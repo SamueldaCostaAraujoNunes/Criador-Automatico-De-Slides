@@ -114,5 +114,6 @@ class Texto:
             json_data = json.load(j)
             return json_data
 
+
 if __name__ == '__main__':
     texto = Texto()
