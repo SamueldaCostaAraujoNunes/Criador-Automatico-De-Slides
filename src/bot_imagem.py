@@ -59,7 +59,9 @@ class Imagem():
             sentence["images"] = self.google_search(
                 search,
                 num=2,
-                # imgSize="HUGE"
+                # imgSize="HUGE,"
+                # imgColorType="TRANS", # Background transparente
+                # imgDominantColor="RED", # Cor predominante
                 )
             n_sentences.append(sentence)
         self.dados["sentences"] = n_sentences
