@@ -1,16 +1,31 @@
 from googleapiclient.discovery import build
 from secrets import API_KEY_GOOGLE_SEARCH, SEARCH_ENGINE_ID
 import json
+from tqdm import tqdm
+import requests
 
 
 class Imagem():
+    """
+    A classe Imagem é responsável por pesquisar,
+    baixar e tratar qualquer imagem
+    utilizada no programa.
+    """
     def __init__(self):
+        """
+        Inicializa a classe Imagem
+        """
         self.load()
-        self.inclui_imagens()
+        # self.inclui_imagens()
+        self.baixa_imagens()
         self.save()
-        pass
 
     def google_search(self, search_term, **kwargs):
+        """
+        Acessa a API do Google Custom Search,
+        e retorna uma lista de links de imagens
+        relacionadas.
+        """
         service = build("customsearch", "v1",
                         developerKey=API_KEY_GOOGLE_SEARCH)
         res = service.cse().list(
@@ -23,6 +38,11 @@ class Imagem():
         return images_link
 
     def inclui_imagens(self):
+        """
+        Insere a lista de links,
+        das imagens relacionadas
+        a cada sentenças
+        """
         sentences = self.dados["sentences"]
         tema = self.dados["input"]["temaCentral"]
         n_sentences = []
@@ -32,25 +52,48 @@ class Imagem():
             print(search)
             sentence["images"] = self.google_search(
                 search,
-                num=3,
+                num=2,
                 #imgSize="HUGE"
                 )
             n_sentences.append(sentence)
         self.dados["sentences"] = n_sentences
 
+    def baixa_imagens(self):
+        """
+        Baixa as imagens da estrutura de dados.
+        """
+        lista_urls = [link["images"] for link in self.dados["sentences"]]
+        sentence = 0
+        for urls in lista_urls:
+            not_download = True
+            cont = 0
+            while not_download:
+                try:
+                    url = urls[cont]
+                    print(url)
+                    r = requests.get(url)
+                    with open(f'Images\\{sentence}.jpg', 'wb') as f:
+                        f.write(r.content)
+                    not_download = False
+                except Exception as e:
+                    print(e)
+                    not_download = True
+                    cont += 1
+            sentence += 1
+
     def save(self):
         """
         Salva o conteudo tratado no documento,
-        dadosSentences.json
+        dados.json
         """
         with open('Documents\\dados.json', 'w',
                   encoding='utf-8') as outfile:
             json.dump(self.dados, outfile, indent=2,
                       ensure_ascii=False)
 
-    def load(self) -> dict:
+    def load(self):
         """
-        Importa os dados de dadosSentences.json
+        Importa os dados de dados.json
         """
         with open('Documents\\dados.json', 'r',
                   encoding='utf-8') as j:
