@@ -15,10 +15,16 @@ class Imagem():
         """
         Inicializa a classe Imagem
         """
+        self.pbar = tqdm(desc="Robô de Imagem: ", total=4)
         self.load()
-        # self.inclui_imagens()
+        self.pbar.update()
+        self.inclui_imagens()
+        self.pbar.update()
         self.baixa_imagens()
+        self.pbar.update()
         self.save()
+        self.pbar.update()
+        self.pbar.close()
 
     def google_search(self, search_term, **kwargs):
         """
@@ -53,7 +59,7 @@ class Imagem():
             sentence["images"] = self.google_search(
                 search,
                 num=2,
-                #imgSize="HUGE"
+                # imgSize="HUGE"
                 )
             n_sentences.append(sentence)
         self.dados["sentences"] = n_sentences
@@ -70,13 +76,11 @@ class Imagem():
             while not_download:
                 try:
                     url = urls[cont]
-                    print(url)
                     r = requests.get(url)
                     with open(f'Images\\{sentence}.jpg', 'wb') as f:
                         f.write(r.content)
                     not_download = False
-                except Exception as e:
-                    print(e)
+                except Exception:
                     not_download = True
                     cont += 1
             sentence += 1

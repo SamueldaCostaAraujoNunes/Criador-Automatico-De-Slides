@@ -16,7 +16,7 @@ class Texto:
         """
         Inicializa a classe Texto
         """
-        pbar = tqdm(desc="Robô de Texto: ", unit="Process", total=6)
+        pbar = tqdm(desc="Robô de Texto: ", total=6)
         self.dados = self.load()
         pbar.update(1)
         self.watson = Watson()
