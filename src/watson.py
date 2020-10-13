@@ -6,6 +6,7 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from secrets import API_KEY_WATSON
 import json
 
+
 class Watson:
     """
     Uma implementação pratica da API do
@@ -50,6 +51,9 @@ class Watson:
 
 if __name__ == '__main__':
     watson = Watson()
-    resposta = watson.analyze_str("O ESP8266 é um microcontrolador do fabricante chinês Espressif que inclui capacidade de comunicação por Wi-Fi.")
+    resposta = watson \
+        .analyze_str("O ESP8266 é um microcontrolador "
+                     "do fabricante chinês Espressif que "
+                     "inclui capacidade de comunicação "
+                     "por Wi-Fi.")
     print(json.dumps(resposta, indent=2))
-    print(keywords)

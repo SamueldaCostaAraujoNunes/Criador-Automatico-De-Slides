@@ -37,7 +37,8 @@ class Texto:
             "articleName": nome_artigo,
             "lang": "pt"
         }
-        # url = f"https://en.wikipedia.org/wiki/{nome_artigo.replace(' ', '_')}"
+        # url = "https://en.wikipedia.org/wiki/" \
+        #       f"{nome_artigo.replace(' ', '_')}"
         # self.keywords = self.watson.analyze_url(url)["keywords"]
         client = Algorithmia.client(API_KEY_ALGORITHMIA)
         algo = client.algo('web/WikipediaParser/0.1.2')
