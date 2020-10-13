@@ -15,23 +15,17 @@ class Texto:
         """
         Inicializa a classe Texto
         """
-        # Buscar dados de input
-        self.dados_input = self.importa_dados()
+        self.dados = self.load()
         self.watson = Watson()
         self.conteudo = self.pesquisa_no_wikipedia()
         self.conteudo_limpo = self.limpa_conteudo()
         self.sentences = self.quebra_em_sentences()
         self.save()
 
-    def importa_dados(self) -> dict:
-        """
-        Importa os dados de input do usuário
-        """
-        with open('Documents\\dadosInput.json', 'r') as j:
-            json_data = json.load(j)
-            return json_data
-
     def pesquisa_no_wikipedia(self) -> str:
+        """
+        Pesquisa o tema principal no wikipedia
+        """
         nome_artigo = self.consulta_o_algoritmia()
         termos = {
             "articleName": nome_artigo,
@@ -47,8 +41,12 @@ class Texto:
         return result["content"]
 
     def consulta_o_algoritmia(self):
+        """
+        Verifica qual o artigo que melhor
+        se encaixa ao tema central
+        """
         m_input = {
-            "search": self.dados_input["temaCentral"],
+            "search": self.dados["input"]["temaCentral"],
             "lang": "pt"
         }
         client = Algorithmia.client(API_KEY_ALGORITHMIA)
@@ -57,6 +55,11 @@ class Texto:
         return algo.pipe(m_input).result[0]
 
     def limpa_conteudo(self) -> str:
+        """
+        Sanitiza o conteudo do wikipedia,
+        retirando marcações, linhas em branco
+        e as tags de MarkDown
+        """
         without_blank_lines = [line.strip()
                                for line in self.conteudo.split("\n")
                                if line.strip() != "" and
@@ -65,13 +68,21 @@ class Texto:
         return texto_limpo
 
     def quebra_em_sentences(self) -> list:
+        """
+        Divide o conteudo limpo,
+        em uma lista de sentenças lógicas.
+        """
         seg = pysbd.Segmenter(language="en", clean=False)
         quebrado = seg.segment(self.conteudo_limpo)
         return quebrado
 
     def save(self):
+        """
+        Salva o conteudo tratado no documento,
+        dadosSentences.json
+        """
         lista_de_sentenças = []
-        for i in range(self.dados_input["tamanhoSlide"]):
+        for i in range(self.dados["input"]["tamanhoSlide"]):
             sentence = self.sentences[i]
             analise = self.watson.analyze_str(sentence)
             keywords = [keyword["text"] for keyword in analise["keywords"]]
@@ -80,12 +91,19 @@ class Texto:
                                "images": []}
             lista_de_sentenças.append(modelo_sentença)
 
-        geral = {"sentences": lista_de_sentenças}
-        with open('Documents\\dadosSentences.json', 'w',
+        geral = {"sentences": lista_de_sentenças, "input": self.dados["input"]}
+        with open('Documents\\dados.json', 'w',
                   encoding='utf-8') as outfile:
             json.dump(geral, outfile, indent=2,
                       ensure_ascii=False)
 
+    def load(self) -> dict:
+        """
+        Importa os dados de input do usuário
+        """
+        with open('Documents\\dados.json', 'r', encoding='utf-8') as j:
+            json_data = json.load(j)
+            return json_data
 
 if __name__ == '__main__':
     texto = Texto()

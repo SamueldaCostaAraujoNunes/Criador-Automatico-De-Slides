@@ -75,13 +75,16 @@ class Inputs:
         """
         try:
             dados = {
-                "temaCentral": self.TEMA_CENTRAL,
-                "autor": self.NOME_AUTOR,
-                "instituição": self.NOME_INSTITUICAO,
-                "dataApresentacao": self.DATA_APRESENTACAO,
-                "tamanhoSlide": self.Q_SLIDES
+                "input":  {
+                    "temaCentral": self.TEMA_CENTRAL,
+                    "autor": self.NOME_AUTOR,
+                    "instituição": self.NOME_INSTITUICAO,
+                    "dataApresentacao": self.DATA_APRESENTACAO,
+                    "tamanhoSlide": self.Q_SLIDES
+                }
             }
-            with open('Documents\\dadosInput.json', 'w') as outfile:
+            with open('Documents\\dados.json', 'w',
+                      encoding='utf-8') as outfile:
                 json.dump(dados, outfile, indent=2, ensure_ascii=False)
             return True
 
