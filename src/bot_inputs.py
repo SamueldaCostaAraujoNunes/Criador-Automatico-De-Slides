@@ -14,7 +14,7 @@ class Inputs:
         """
         try:
             tema = input("Insira aqui o tema desejado: ")
-            self.TEMA_CENTRAL = self.trata_texto(tema)
+            self.TEMA_CENTRAL = self.trata_nome(tema)
             nome = input("Insira aqui o seu nome completo: ")
             self.NOME_AUTOR = self.trata_nome(nome)
             instituicao = input(
