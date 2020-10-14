@@ -16,17 +16,16 @@ class Imagem():
         """
         Inicializa a classe Imagem
         """
-        self.pbar = tqdm(desc="Robô de Imagem: ", total=5)
-        self.progress_bar(self.load)
-        self.progress_bar(self.inclui_imagens)
-        self.progress_bar(self.save)
-        self.progress_bar(self.baixa_imagens)
-        self.progress_bar(self.trata_imagens)
-        self.pbar.close()
+        sequence = [
+            self.load,
+            self.inclui_imagens,
+            self.save,
+            self.baixa_imagens,
+            self.trata_imagens
+        ]
 
-    def progress_bar(self, function):
-        function()
-        self.pbar.update()
+        for function in tqdm(sequence, desc="Robô de Imagem: "):
+            function()
 
     def google_search(self, search_term, **kwargs):
         """
