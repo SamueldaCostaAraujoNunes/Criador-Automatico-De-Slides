@@ -4,6 +4,7 @@ import pysbd
 from secrets import API_KEY_ALGORITHMIA
 from watson import Watson
 from tqdm import tqdm
+from tradutor import traduz
 
 
 class Texto:
@@ -16,29 +17,36 @@ class Texto:
         """
         Inicializa a classe Texto
         """
-        pbar = tqdm(desc="Robô de Texto: ", total=6)
-        self.dados = self.load()
-        pbar.update(1)
-        self.watson = Watson()
-        pbar.update(1)
-        self.conteudo = self.pesquisa_no_wikipedia()
-        pbar.update(1)
-        self.conteudo_limpo = self.limpa_conteudo()
-        pbar.update(1)
-        self.sentences = self.quebra_em_sentences()
-        pbar.update(1)
+        pbar = tqdm(desc="Robô de Texto: ", total=8)
+        self.load()
+        pbar.update()
+        self.cria_watson()
+        pbar.update()
+        self.pesquisa_no_wikipedia()
+        pbar.update()
+        self.limpa_conteudo()
+        pbar.update()
+        self.quebra_em_sentences()
+        pbar.update()
+        self.cria_keywords()
+        pbar.update()
+        self.traduzir_sentences()
+        pbar.update()
         self.save()
-        pbar.update(1)
+        pbar.update()
         pbar.close()
 
-    def pesquisa_no_wikipedia(self) -> str:
+    def cria_watson(self):
+        self.watson = Watson()
+
+    def pesquisa_no_wikipedia(self):
         """
         Pesquisa o tema principal no wikipedia
         """
         nome_artigo = self.consulta_o_algoritmia()
         termos = {
             "articleName": nome_artigo,
-            "lang": "pt"
+            "lang": "en"
         }
         # url = "https://en.wikipedia.org/wiki/" \
         #       f"{nome_artigo.replace(' ', '_')}"
@@ -47,7 +55,7 @@ class Texto:
         algo = client.algo('web/WikipediaParser/0.1.2')
         algo.set_options(timeout=300)
         result = algo.pipe(termos).result
-        return result["content"]
+        self.conteudo = result["content"]
 
     def consulta_o_algoritmia(self):
         """
@@ -56,14 +64,14 @@ class Texto:
         """
         m_input = {
             "search": self.dados["input"]["temaCentral"],
-            "lang": "pt"
+            "lang": "en"
         }
         client = Algorithmia.client(API_KEY_ALGORITHMIA)
         algo = client.algo('web/WikipediaParser/0.1.2')
         algo.set_options(timeout=300)
         return algo.pipe(m_input).result[0]
 
-    def limpa_conteudo(self) -> str:
+    def limpa_conteudo(self):
         """
         Sanitiza o conteudo do wikipedia,
         retirando marcações, linhas em branco
@@ -74,45 +82,59 @@ class Texto:
                                if line.strip() != "" and
                                (not line.startswith("="))]
         texto_limpo = ' '.join(without_blank_lines)
-        return texto_limpo
+        self.conteudo_limpo = texto_limpo
 
-    def quebra_em_sentences(self) -> list:
+    def quebra_em_sentences(self):
         """
         Divide o conteudo limpo,
         em uma lista de sentenças lógicas.
         """
         seg = pysbd.Segmenter(language="en", clean=False)
         quebrado = seg.segment(self.conteudo_limpo)
-        return quebrado
+        self.sentences = quebrado[:self.dados["input"]["tamanhoSlide"]]
+
+    def cria_keywords(self):
+        """
+        A partir de uma frase, são definidas as keywords dela.
+        """
+        n_senteces = []
+        for sentence in self.sentences:
+            analise = self.watson.analyze_str(sentence)
+            keywords = [keyword["text"] for keyword in analise["keywords"]]
+            model_sentence = {"text": sentence,
+                              "keywords": keywords,
+                              "images": []}
+            n_senteces.append(model_sentence)
+        self.sentences = n_senteces
+
+    def traduzir_sentences(self):
+        """
+        Traduz as sentenças para português.
+        """
+        n_sentences = []
+        for sentence in self.sentences:
+            sentence["text"] = traduz(sentence["text"], 'pt')
+            n_sentences.append(sentence)
+        self.sentences = n_sentences
 
     def save(self):
         """
         Salva o conteudo tratado no documento,
         dadosSentences.json
         """
-        lista_de_sentenças = []
-        for i in range(self.dados["input"]["tamanhoSlide"]):
-            sentence = self.sentences[i]
-            analise = self.watson.analyze_str(sentence)
-            keywords = [keyword["text"] for keyword in analise["keywords"]]
-            modelo_sentença = {"text": sentence,
-                               "keywords": keywords,
-                               "images": []}
-            lista_de_sentenças.append(modelo_sentença)
-
-        geral = {"sentences": lista_de_sentenças, "input": self.dados["input"]}
+        geral = {"sentences": self.sentences, "input": self.dados["input"]}
         with open('Documents\\dados.json', 'w',
                   encoding='utf-8') as outfile:
             json.dump(geral, outfile, indent=2,
                       ensure_ascii=False)
 
-    def load(self) -> dict:
+    def load(self):
         """
         Importa os dados de input do usuário
         """
         with open('Documents\\dados.json', 'r', encoding='utf-8') as j:
             json_data = json.load(j)
-            return json_data
+            self.dados = json_data
 
 
 if __name__ == '__main__':

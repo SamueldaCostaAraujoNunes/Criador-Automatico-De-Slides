@@ -18,6 +18,5 @@ def formata_imagem(origem, destino, width=1920, height=1080):
 
 
 formata_imagem(
-        f"Images\\4.jpg",
-        f"Images\\4-tratado.jpg")
-
+        "Images\\4.jpg",
+        "Images\\4-tratado.jpg")

@@ -1,5 +1,6 @@
 # import datetime
 import json
+from tradutor import traduz
 
 
 class Inputs:
@@ -14,7 +15,8 @@ class Inputs:
         """
         try:
             tema = input("Insira aqui o tema desejado: ")
-            self.TEMA_CENTRAL = self.trata_nome(tema)
+            self.TEMA_CENTRAL = traduz(
+                texto=self.trata_nome(tema), language="en")
             nome = input("Insira aqui o seu nome completo: ")
             self.NOME_AUTOR = self.trata_nome(nome)
             instituicao = input(
@@ -30,7 +32,7 @@ class Inputs:
             self.save()
 
         except ValueError:
-            print("Dado incompativel")
+            print("Dado incompatível")
 
         except AttributeError:
             print("Insira os dados no padrão solicitado")

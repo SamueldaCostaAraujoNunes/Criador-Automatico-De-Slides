@@ -5,6 +5,7 @@ from tqdm import tqdm
 import requests
 from PIL import Image, ImageFilter
 
+
 class Imagem():
     """
     A classe Imagem é responsável por pesquisar,
@@ -26,7 +27,6 @@ class Imagem():
     def progress_bar(self, function):
         function()
         self.pbar.update()
-
 
     def google_search(self, search_term, **kwargs):
         """
