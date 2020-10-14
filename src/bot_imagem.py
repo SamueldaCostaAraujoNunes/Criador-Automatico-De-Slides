@@ -41,6 +41,7 @@ class Imagem():
             cx=SEARCH_ENGINE_ID,
             searchType='image',
             imgColorType='color',
+            # rights="cc_publicdomain",
             **kwargs).execute()
 
         images_link = [items["link"] for items in res["items"]]
