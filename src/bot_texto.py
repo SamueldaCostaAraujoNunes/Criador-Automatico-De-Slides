@@ -17,24 +17,18 @@ class Texto:
         """
         Inicializa a classe Texto
         """
-        pbar = tqdm(desc="Robô de Texto: ", total=8)
-        self.load()
-        pbar.update()
-        self.cria_watson()
-        pbar.update()
-        self.pesquisa_no_wikipedia()
-        pbar.update()
-        self.limpa_conteudo()
-        pbar.update()
-        self.quebra_em_sentences()
-        pbar.update()
-        self.cria_keywords()
-        pbar.update()
-        self.traduzir_sentences()
-        pbar.update()
-        self.save()
-        pbar.update()
-        pbar.close()
+        sequence = [
+            self.load,
+            self.cria_watson,
+            self.pesquisa_no_wikipedia,
+            self.limpa_conteudo,
+            self.quebra_em_sentences,
+            self.cria_keywords,
+            self.traduzir_sentences,
+            self.save
+        ]
+        for function in tqdm(sequence, desc="Robô de Texto: "):
+            function()
 
     def cria_watson(self):
         self.watson = Watson()
